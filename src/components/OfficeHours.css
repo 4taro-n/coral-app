@@ -1,0 +1,133 @@
+.office-hours-section {
+    margin: 0 6vw;
+    border-right: 1px solid rgb(235, 235, 235);
+    border-left: 1px solid rgb(235, 235, 235);
+}
+.office-hours-heading {
+    /* display: flex;
+    justify-content: flex-start; */
+    /* 背景色にグラデーションを設定 */
+    background: var(--home-title);
+    /* background: -webkit-linear-gradient(90deg,#0065b0 0,#dd0b31 100%); */
+    /* テキストでくり抜く */
+    -webkit-background-clip: text;
+    /* くり抜いた部分が背景を表示 */
+    -webkit-text-fill-color: transparent;
+}
+.office-hours-heading > h1 {
+    padding-top: 100px;
+}
+/* table {
+    margin-top: 10vh;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+tbody {
+    border-radius: 9px;
+}
+table th, table td {
+    padding: 1vh 2vw;
+    text-align: center;
+    border: 1px solid #000;
+}
+.bg-pink {
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    color: #fff;
+} */
+.office-hours-table {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+table {
+    border: 1px solid var(--table-border);
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    width: 60%;
+}
+table thead th,
+table tbody th,
+table tbody td {
+    padding: 1vh 2vw;
+    border-bottom: 1px solid var(--table-border);
+}
+table thead th {
+    background: var(--table-back);
+    color: var(--table-color);
+}
+table tbody th {
+    background: var(--table-back);
+    color: var(--table-color);
+}
+table thead th + th,
+table tbody td {
+    border-left: 1px solid var(--table-border);
+}
+table tbody tr:last-child th,
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+
+.calendar-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 50%;
+    height: 50%; */
+    margin-top: 10vh;
+    width: 100%;
+}
+.calendar-position {
+    width: 60%;
+    height: 60%;
+}
+/* スクロールバー */
+.fc-scroller::-webkit-scrollbar-track {
+    background: var(--cal-back);
+    border-radius: 0; 
+}
+/* 日付配色 */
+.fc-col-header-cell {
+    background: var(--cal-back);
+}
+.fc-col-header {
+    border-radius: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .office-hours-section {
+        margin: 0 12vw;
+        border: none;
+    }
+    .calendar-position {
+        width: 70%;
+        height: 70%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .office-hours-section {
+        margin: 0 5vw;
+    }
+    table {
+        width: 100%;
+    }
+    .calendar-position {
+        width: 80%;
+        height: 80%;
+    }
+}
+@media screen and (max-width: 415px) {
+    table {
+        font-size: 14px;
+    }
+    .calendar-position {
+        width: 100%;
+        height: 120%;
+    }
+}

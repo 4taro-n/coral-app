@@ -1,0 +1,167 @@
+.navbar {
+    display: flex;
+    font-size: 1rem;
+    font-size: 0.9rem;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-weight: 500;
+    height: 103px;
+    position: fixed;
+    top: 34px;
+    left: 53px;
+    right: 27px;
+    z-index: 99;
+}
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+.coral_logo {
+    width: 360px;
+    fill: var(--nav-logo);
+}
+.nav-margin {
+    flex: 1;
+}
+.nav-menu {
+    display: flex;
+    height: 103px;
+    text-align: center;
+    border-radius: 9px;
+    background: var(--nav-back);
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    list-style: none;
+    padding: 0 10px;
+}
+.nav-links {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+.nav-links:hover {
+    border-bottom: 4px solid var(--nav-links-hover);
+    transition: all 0.2 ease-out;
+    cursor: pointer;
+}
+.fa-bars {
+    color: var(--nav-icon);
+}
+.menu-icon {
+    display: none;
+}
+/* スクロールに応じて変化せる */
+.navbar.active {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    transition: all 0.2s 0s ease-out;
+    height: 80px;
+}
+.navbar.active > .navbar-logo,
+.navbar.active > .nav-margin {
+    background: #fff;
+}
+.navbar.active .coral_logo {
+    fill: var(--nav-logo-scroll);
+    transform: translate(10%);
+}
+.navbar.active > .nav-menu {
+    border-radius: 0;
+    box-shadow: 0 0 0 0;
+    height: 80px;
+}
+@media screen and (max-width: 1171px) {
+    .navbar {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 1005px) {
+    .nav-links {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .navbar {
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        height: 80px;
+    }
+    .navbar.active {
+        height: 80px;
+    }
+    /* .nav-menu, .navbar.active > .nav-menu {
+        border-radius: 0;
+        box-shadow: 0 0 0 0;
+    } */
+    /* 縦並びにして画面外へ配置 */
+    .nav-menu {
+        border-radius: 0;
+        box-shadow: 0 0 0 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 78px;
+        left: -100%;
+        /* opacity: 1; */
+        transition: all 0.5s ease;
+        padding: 0;
+    }
+    /* 画面内へ戻す */
+    .nav-menu.back {
+        background: var(--nav-mobile-back);
+        left: 0;
+        /* opacity: 0; */
+        transition: all 0.5 ease;
+        z-index: 1;
+    }
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        color: var(--nav-mobile-links);
+    }
+    .nav-links:hover {
+        background: var(--nav-mobile-back-hover);
+        color: var(--nav-mobile-links-hover);
+        border-radius: 0;
+    }
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 70%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    .fa-times {
+        color: var(--nav-icon);
+        font-size: 2rem;
+    }
+
+    .navbar.active > .nav-menu {
+        height: 90vh;
+    }
+    @media screen and (max-width: 768px) {
+        .coral_logo {
+            width: 200px;
+            height: auto;
+            /* transform: translate(15%, 100%); */
+            transform: translate(10%);
+        }
+    }
+
+
+}
+

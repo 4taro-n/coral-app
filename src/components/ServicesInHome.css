@@ -1,0 +1,106 @@
+.services-home-section {
+    /* margin: 100px 6vw; */
+    margin: 0 6vw;
+    border-right: 1px solid rgb(235, 235, 235);
+    border-left: 1px solid rgb(235, 235, 235);
+}
+.services-home-heading {
+    /* display: flex;
+    justify-content: flex-start; */
+    /* 背景色にグラデーションを設定 */
+    background: var(--home-title);
+    /* background: -webkit-linear-gradient(90deg,#0065b0 0,#dd0b31 100%); */
+    /* テキストでくり抜く */
+    -webkit-background-clip: text;
+    /* くり抜いた部分が背景を表示 */
+    -webkit-text-fill-color: transparent;
+}
+.services-home-heading > h1 {
+    margin-top: 100px;
+}
+.services-home-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    /* gap: 2px; */
+    margin-top: 10vh;
+}
+.services-link {
+    width: 15vw;
+    height: 20vw;
+    background: var(--services-home-link);
+    color: #fff;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* position: relative; */ 
+}
+.services-link:first-of-type {
+    background: var(--services-home-link-first);
+}
+.services-link:nth-of-type(2) {
+    background: var(--services-home-link-second);
+}
+.services-link:nth-of-type(3) {
+    background: var(--services-home-link-third);
+}
+.services-link:nth-of-type(4) {
+    background: var(--services-home-link-fourth);
+}
+.services-link:hover {
+    opacity: 1;
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.09);
+    /* １よりも大きい数字で */
+    z-index: 2;
+    overflow: hidden;
+}
+.services-link-i {
+    font-size: 5rem;
+}
+.services-link-text {
+    /* position: absolute;
+    bottom: 20px; */
+    margin-top: 20px; 
+}
+
+@media screen and (max-width: 960px) {
+    .services-home-section {
+        margin: 0 12vw;
+        border: none;
+    }
+    .services-home-heading > h1 {
+        margin-top: 5vh;
+    }
+    .services-home-links {
+        grid-template-columns: 1fr 1fr;
+    }
+    .services-link {
+        width: 25vw;
+    }
+    .services-link:nth-of-type(3), .services-link:nth-of-type(4){
+        margin-top: 5vh;
+    }
+}
+@media screen and (max-width: 768px) {
+    .services-home-section {
+        margin: 0 5vw;
+    }
+    .services-link {
+        width: 35vw;
+        height: 30vh;
+    }
+}
+@media screen and (max-width: 415px) {
+    .services-link {
+        width: 40vw;
+        height: 20vh;
+    }
+    .services-link-i {
+        font-size: 4rem;
+    }
+}

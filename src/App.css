@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+:root {
+    /* navbar */
+    --nav-back: #fff;
+    --nav-links-hover: #00A0E8;
+    --nav-logo: #242222;
+    /* navbar(active) */
+    --nav-logo-scroll:rgba(0, 0, 0, .5);
+    /* navbar(mobile) */
+    --nav-mobile-back: linear-gradient(90deg, #34B498 0%, #00A0E8 100%);
+    --nav-mobile-links: #fff;
+    --nav-mobile-links-hover: #242424;
+    --nav-mobile-back-hover: #fff;
+    --nav-icon: black;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+    /* Home */
+    --home-title: -webkit-linear-gradient(0deg, #00A0E8 0%, #34B498 100%);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    /* top-page */
+    --top-btn-border: linear-gradient(90deg, #34B498 0%, #00A0E8 100%);
+    --top-btn-back: linear-gradient(90deg, #34B498 0%, #00A0E8 100%);
+    --top-btn-back-hover:#fff;
+    --top-btn-color-hover:#242222;
 
-.App-link {
-  color: #61dafb;
-}
+    /* covid */
+    --covid-border: #EFCDD7;
+    --covid-title: #800000;
+    --covid-btn-border:#800000;
+    --covid-btn-back:#fff;
+    --covid-btn-color: #242222;
+    --covid-btn-back-hover:#E04F86;
+    --covid-btn-color-hover: #fff;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    /* line */
+    --line-border: #00C129;
+    --line-title: #E57F26;
+    --line-icon: #00C129;
+    --line-btn-border: #00C129;
+    --line-btn-back: #00C129;
+    --line-btn-color: #fff;
+    /* --line-btn-icon-color: #fff; */
+    --line-btn-back-hover: #fff;
+    --line-btn-color-hover: #242222;
+    /* --line-btn-icon-color-hover: #00C129; */
+
+    /* news-in-home */
+    --news-btn-border: #00A0E8;
+    --news-btn-back: #fff;
+    --news-btn-color: #242222;
+    --news-btn-back-hover: linear-gradient(90deg, #34B498 0%, #00A0E8 100%);
+    --news-btn-color-hover: #fff;
+
+    /* services-in-home */
+    --services-home-link: linear-gradient(90deg, #67BFD5 0%, #F7CD39 100%);
+    --services-home-link-first: #77D2D3;
+    --services-home-link-second: #FFFB84;
+    --services-home-link-third: #CF859B;
+    --services-home-link-fourth: #EDF5E2;
+
+    /* officehours */
+    --table-border: rgb(235, 235, 235);
+    --table-back: #00A0E8;
+    --table-color: #fff;
+    --cal-back: #FAE3E0;
+
+    /* access */
+    --access-icon-color: #242222;
+    --googlemap-btn-border: #00A0E8;
+    --googlemap-btn-back: repeating-linear-gradient(
+        -45deg, #FFF40A, #FFF40A 2px, #fffee6 0, #fffee6 12px);;
+    --googlemap-btn-color: #fff;
+    --googlemap-btn-back-hover: #fff;
+    --googlemap-btn-color-hover: #242222;
+
+    /* footer */
+    --fotter-back: linear-gradient(90deg, #34B498 0%, #00A0E8 100%);
+
+    /* subpage-top */
+    --subpage-hurf-box-back: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    /* news-page */
+    --news-list-back: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+
+    /* services-page */
+    --services-pic-back: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    --services-icon: #242222;
+
+    /* recruit-page */
+
 }

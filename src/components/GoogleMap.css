@@ -1,0 +1,14 @@
+.GoogleMap {
+    height: 50vh;
+    width: 88vw;
+}
+@media screen and (max-width: 960px) {
+    .GoogleMap {
+        width: 76vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .GoogleMap {
+        width: 90vw;
+    }
+}

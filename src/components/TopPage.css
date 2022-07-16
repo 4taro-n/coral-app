@@ -1,0 +1,207 @@
+.top-page {
+    height: 100vh;
+    /* background: url(./images/img-2.jpg); */
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center; */
+
+}
+.top-background {
+    background: url(./images/chair.JPG);
+    background: url(./images/img-2.jpg);
+    background-repeat:  no-repeat;                  
+    /* background-position: center center;  */
+    background-size: cover; 
+    /* background-attachment: fixed; */
+    width: 65vw;
+    height: 100vh;  
+    /* z-index: -99; */
+}
+.top-contents {
+    width: 29vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+.top-contents > h1, .top-contents-p {
+    margin-left: -50px;
+}
+.top-contents > h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.01rem;
+    /* 背景色にグラデーションを設定 */
+    background: var(--home-title);
+    /* background: -webkit-linear-gradient(90deg,#0065b0 0,#dd0b31 100%); */
+    /* テキストでくり抜く */
+    -webkit-background-clip: text;
+    /* くり抜いた部分が背景を表示 */
+    -webkit-text-fill-color: transparent;
+}
+
+
+.top-contents-p > p {
+    font-weight: 100;
+}
+.top-page-link {
+    margin-top: 4vh;
+    margin-left: -50px;
+}
+.top-page-btn {
+    position: relative;
+	overflow: hidden;
+    text-decoration: none;
+	display: inline-block;
+    text-align: center;
+   	border: 1px solid var(--top-btn-border);
+    background: var(--top-btn-back);
+    border-radius: 3px;
+    padding: 20px 60px;
+    font-size: 13px;
+    
+    outline: none;  
+    transition: ease .2s;
+    cursor: pointer;
+}
+.top-page-btn span {
+    position: relative;
+	z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+    font-weight: 700;
+	color:var(--top-btn-back-hover);
+}
+.top-page-btn:hover span {
+    color:var(--top-btn-color-hover);
+}
+/*== 背景が流れる（左から右） */
+.top-page-btn:before {
+    content: '';
+   /*絶対配置で位置を指定*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+   /*色や形状*/
+    background:#fff;/*背景色*/
+    width: 100%;
+   height: 100%;
+   /*アニメーション*/
+    transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    transform: scale(0, 1);
+   transform-origin: right top;
+}
+/*hoverした際の形状*/
+.top-page-btn:hover:before{
+	transform-origin:left top;
+	transform:scale(1, 1);
+}
+.top-page-btn i {
+    /* position: absolute; */
+    /* top:30%;
+    right: 13px; */
+    font-size: 1rem;
+    transform: translate(10%, 7%);
+    transition: all .3s;
+}
+.top-page-btn:hover i {
+    /* right: 11px; */
+    transform: translate(45%, 7%);
+}
+/* @keyframe movetoright {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10);
+    }
+} */
+
+
+.top-side-scroll {
+    width: 6vw;
+    /* background: red; */
+    border-left: 1px solid rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;   
+}
+.top-side-scroll > span {
+    writing-mode: vertical-rl;
+}
+.top-side-scroll::after {
+    content: "";
+    /*描画位置*/
+    /* position: absolute;
+    top: 0; */
+    /*線の形状*/
+    width: 1px;
+    height: 30px;
+    background: black;
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+    animation: pathmove 2.5s ease-in-out infinite;
+    opacity:0;
+}
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove{
+    0%{
+      height:0;
+      top:0;
+      opacity: 0;
+    }
+    30%{
+      height:30px;
+      opacity: 1;
+    }
+    100%{
+      height:0;
+      top:50px;
+      opacity: 0;
+    }
+}
+@media screen and (max-width: 960px) {
+    .top-page {
+        /* margin-top: 103px; */
+        flex-direction: column;
+        align-items: center;
+    }
+    .top-background {
+        /* margin-right: -35vw; */
+        width: 80vw;
+        height: 60vh;
+        margin-right: -20vw;
+        background-size: cover;
+        /* width: 100vw; */
+        /* background-position: center center; */
+    }
+    .top-contents {
+        /* width: 100vw; */
+        min-width: 80vw;
+        /* margin: 0 5rem; */
+    }
+    .top-contents > h1 {
+        margin-left: 0;
+        margin-top: -10vh;
+        /* font-size: 5rem; */
+    }
+    .top-contents-p,
+    .top-page-link {
+        margin-left: 0;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+    .top-side-scroll {
+        display: none;
+    }
+}
+@media screen and (max-width: 415px) {
+    .top-contents > h1 {
+        font-size: 3rem;
+        margin-top: -3vh;
+    }
+    /* .top-contents > p {
+        font-size: 1px;
+    } */
+        
+}
+
