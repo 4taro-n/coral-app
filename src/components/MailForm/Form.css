@@ -19,9 +19,7 @@
     margin-top: 1.5rem;
     font-size: 1rem;
 }
-.success {
-    margin-top: 80px;
-}
+
 .form-inputs {
     /* margin: 2rem auto; */
     border-top: 1px solid #e3e9e9;
@@ -130,6 +128,44 @@ textarea {
     -webkit-appearance: none;
 }
 .submit-button > input:hover {
+    transition: all 0.3s ease-out;
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+}
+
+/* success page */
+.success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 80px 10rem;
+    margin: 6vh 6vw;
+}
+.success-title {
+    font-size: 1.8rem;
+    /* border-bottom: 1px solid rgb(235, 235, 235); */
+    border-bottom: 2px solid var(--nav-links-hover);
+}
+.success-txtbox {
+    margin: 5vh auto;
+    display: flex;
+    flex-direction: column;
+}
+.form-success-btn {
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1rem;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #242222;
+    border: 1px solid #242222;
+    -webkit-appearance: none;
+}
+
+.form-success-btn:hover {
     transition: all 0.3s ease-out;
     background: #fff;
     color: #242424;

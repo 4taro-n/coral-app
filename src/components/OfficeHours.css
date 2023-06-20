@@ -99,6 +99,9 @@ table tbody tr:last-child td {
 .fc-col-header {
     border-radius: 0;
 }
+.fc-day-sun {
+    background-color: #ffeaea;
+}
 
 @media screen and (max-width: 960px) {
     .office-hours-section {
