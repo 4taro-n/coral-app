@@ -41,7 +41,8 @@
     display: inline-block;
     border: 1px solid var(--googlemap-btn-border);
     color: var(--googlemap-btn-color);
-    background: var(--googlemap-btn-back);
+    /* background: var(--googlemap-btn-back); */
+    background:#242222;
     border-radius: 3px;
 
     outline: none;  

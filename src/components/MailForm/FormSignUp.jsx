@@ -33,7 +33,9 @@ const FormSignup = ({submitForm}) => {
                             onChange={handleChange}>
                                 <option value="歯科衛生士（正社員)">歯科衛生士（正社員)</option>
                                 <option value="歯科衛生士（パートタイマー)">歯科衛生士（パートタイマー）</option>
-                                <option value="歯科助手・受付（正社員）">歯科助手・受付（正社員）</option>
+                                <option value="歯科助手（正社員）">歯科助手（正社員）</option>
+                                <option value="歯科技工士（正社員）">歯科技工士（正社員）</option>
+                                <option value="歯科技工士（パートタイマー）">歯科技工士（パートタイマー）</option>
                             </select>
                             {/* <p>{values.job}</p> */}
                         </div>

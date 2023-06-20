@@ -68,19 +68,11 @@ function OfficeHours() {
                         <td>●</td>
                         <td>●</td>
                         <td>●</td>
-                        <td>●</td>
+                        <td>▲</td>
                         <td>/</td>
                         </tr>
-                        <th>12:00 ~ 15:00(往診)</th>
-                        <td>●</td>
-                        <td>●</td>
-                        <td>●</td>
-                        <td>●</td>
-                        <td>●</td>
-                        <td>●</td>
-                        <td>/</td>
                         <tr>
-                        <th>15:00 ~ 19:00</th>
+                        <th>15:00 ~ 19:30</th>
                         <td>●</td>
                         <td>●</td>
                         <td>●</td>
@@ -92,6 +84,7 @@ function OfficeHours() {
                     </tbody>
                 </table>
             </div>
+            <div>▲は午前８時からの診療となります</div>
             <Calendar />
             
         </div>

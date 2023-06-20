@@ -91,6 +91,7 @@ const Navbar = ({link_scroll}) => {
                     </li>
                     <li>
                         <Link to="/Recruit" className="nav-links" onClick={closeMobileMenu}>
+                        {/* <Link to="/" className="nav-links" onClick={closeMobileMenu}> */}
                             求人情報
                         </Link>
                     </li>

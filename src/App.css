@@ -59,9 +59,9 @@
     /* services-in-home */
     --services-home-link: linear-gradient(90deg, #67BFD5 0%, #F7CD39 100%);
     --services-home-link-first: #77D2D3;
-    --services-home-link-second: #FFFB84;
+    --services-home-link-second: #e2dd5b;
     --services-home-link-third: #CF859B;
-    --services-home-link-fourth: #EDF5E2;
+    --services-home-link-fourth: #addb6e;
 
     /* officehours */
     --table-border: rgb(235, 235, 235);

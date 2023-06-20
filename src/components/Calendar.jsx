@@ -38,8 +38,10 @@ function Calendar() {
                 plugins={[dayGridPlugin, interactionPlugin]}
                 initialView='dayGridMonth'
                 locale="ja"
-                dateClick={handleDateClick} 
-                
+                dateClick={handleDateClick}
+                dayCellContent = {function(e) {
+                    e.dayNumberText = e.dayNumberText.replace('日', '');
+                }}
                 // events={[
                 //     {
                 //     title  : 'event1',
@@ -53,6 +55,7 @@ function Calendar() {
                 // ]}
 
                 events={plan}
+
 
                 className="Calendar"
                 />

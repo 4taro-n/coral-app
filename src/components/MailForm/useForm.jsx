@@ -47,7 +47,8 @@ const useForm = (callback, validate) => {
 
         if(send) {
             console.log('send');
-            emialjs.sendForm('gmail_test', 'template_smxpbxt', e.target, 'user_9WJzYlIr0tiung2DEGLsp').then((result) => {
+            //service id, template id, public key
+            emialjs.sendForm('service_glse05q', 'template_smxpbxt', e.target, 'h437sA8uitm2hoeAX').then((result) => {
             console.log(result.text);
             },(error) => {
                 console.log(error.text);

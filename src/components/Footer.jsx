@@ -24,7 +24,7 @@ function Footer() {
                         <h2>Contact Us</h2>
                         <p>〒501-0236</p>
                         <p>岐阜県瑞穂市本田749-1</p>
-                        <p>Tel: 058-260-6177</p>
+                        <p>Tel: (058)-329-3456</p>
                     </div>
                 </div>
                 <div className="footer-link-wrapper">
@@ -34,7 +34,8 @@ function Footer() {
                         <Link to="/NewsPage" className="footer-links-content">新着情報</Link>
                         <Link to="/ServicesPage" className="footer-links-content">診療案内</Link>
                         <Link to="/Recruit" className="footer-links-content">求人情報</Link>
-                        <Link to="/EditerPage" className="footer-links-content">管理者ページ</Link>
+                        {/* <Link to="/EditerPage" className="footer-links-content">管理者ページ</Link> */}
+                        <Link to="/EditerPage" className="footer-links-content">/</Link>
                     </div>
                 </div>
             </div>

@@ -34,7 +34,7 @@ function Access() {
                             <i class="fas fa-car"></i>
                         </div>
                         <div className="access-option-text">
-                            JR東海道　「穂積駅」<br/>車約15分
+                            JR東海道 「穂積駅」<br/>車で約5分
                         </div>
                     </li>
                     <li className="access-option">
@@ -42,7 +42,7 @@ function Access() {
                             <i class="fas fa-bus-alt"></i>
                         </div>
                         <div className="access-option-text">
-                            本田団地バス停<br/>徒歩１分
+                            本田団地北バス停<br/>徒歩１分
                         </div>
                     </li>
                 </ul>
