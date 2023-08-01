@@ -68,7 +68,13 @@ function OfficeHours() {
                         <td>●</td>
                         <td>●</td>
                         <td>●</td>
+                        {/* <td><div className="dot"></div></td>
+                        <td><div className="dot"></div></td>
+                        <td><div className="dot"></div></td>
+                        <td><div className="dot"></div></td>
+                        <td><div className="dot"></div></td> */}
                         <td>▲</td>
+                        {/* <td><div className="triangle"></div></td> */}
                         <td>/</td>
                         </tr>
                         <tr>
@@ -76,15 +82,19 @@ function OfficeHours() {
                         <td>●</td>
                         <td>●</td>
                         <td>●</td>
+                        {/* <td><div className="dot"></div></td>
+                        <td><div className="dot"></div></td>
+                        <td><div className="dot"></div></td> */}
                         <td>/</td>
                         <td>●</td>
+                        {/* <td><div className="dot"></div></td> */}
                         <td>/</td>
                         <td>/</td>
                         </tr>
                     </tbody>
                 </table>
+                <div calssName="office-hours-notice">▲は午前８時からの診療となります</div>
             </div>
-            <div>▲は午前８時からの診療となります</div>
             <Calendar />
             
         </div>

@@ -32,9 +32,7 @@ const News = () => {
     })
     return (
         <div className="news-section" id="news">
-            NewsInHomeです
             <ul className="news-lists">{newsList}</ul>
-            
         </div>
     )
 }

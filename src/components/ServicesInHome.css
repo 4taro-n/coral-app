@@ -1,8 +1,10 @@
 .services-home-section {
-    /* margin: 100px 6vw; */
-    margin: 0 6vw;
+    padding: 0 6vw;
+    /* padding: 100px 6vw; */
     border-right: 1px solid rgb(235, 235, 235);
     border-left: 1px solid rgb(235, 235, 235);
+
+    background: var(--base);
 }
 .services-home-heading {
     /* display: flex;
@@ -16,7 +18,7 @@
     -webkit-text-fill-color: transparent;
 }
 .services-home-heading > h1 {
-    margin-top: 100px;
+    padding-top: 100px;
 }
 .services-home-links {
     display: grid;
@@ -27,6 +29,27 @@
     margin-top: 10vh;
 }
 .services-link {
+    border-radius: 9px;  
+    /* background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff; */
+
+    background-color: #e0e5ec;
+    /* dark */
+    box-shadow: 7px 7px 12px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    transition: all 250ms ease-in-out;
+    border: 1px solid rgba(255,255,255,0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 15vw;
+    height: 20vw;
+    color: var(--services-home);
+}
+/* .services-link {
     width: 15vw;
     height: 20vw;
     background: var(--services-home-link);
@@ -37,8 +60,8 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    /* position: relative; */ 
 }
+
 .services-link:first-of-type {
     background: var(--services-home-link-first);
 }
@@ -50,31 +73,31 @@
 }
 .services-link:nth-of-type(4) {
     background: var(--services-home-link-fourth);
-}
+} */
 .services-link:hover {
-    opacity: 1;
+    /* opacity: 1;
     transition: all 0.1s ease-in-out;
     transform: scale(1.09);
-    /* １よりも大きい数字で */
     z-index: 2;
-    overflow: hidden;
+    overflow: hidden; */
+
+    box-shadow: 9px 9px 16px rgb(163 177 198 / 60%), -9px -9px 16px rgb(255 255 255 / 50%), inset 3px 3px 7px rgb(136 165 191 / 48%), inset -3px -3px 7px #ffffff;
 }
 .services-link-i {
     font-size: 5rem;
 }
 .services-link-text {
-    /* position: absolute;
-    bottom: 20px; */
+    color: var(--base-txt);
     margin-top: 20px; 
 }
 
 @media screen and (max-width: 960px) {
     .services-home-section {
-        margin: 0 12vw;
+        padding: 0 12vw;
         border: none;
     }
     .services-home-heading > h1 {
-        margin-top: 5vh;
+        padding-top: 5vh;
     }
     .services-home-links {
         grid-template-columns: 1fr 1fr;
@@ -88,7 +111,7 @@
 }
 @media screen and (max-width: 768px) {
     .services-home-section {
-        margin: 0 5vw;
+        padding: 0 5vw;
     }
     .services-link {
         width: 35vw;

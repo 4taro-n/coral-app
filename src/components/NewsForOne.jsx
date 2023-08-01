@@ -3,7 +3,7 @@ import {useParams} from 'react-router-dom';
 
 import * as Api from './firebase/Api';
 
-import './NewsForOne.css';
+import './News.css';
 
 const NewsForOne = () => {
     // パラメーターを取得
@@ -22,12 +22,14 @@ const NewsForOne = () => {
     },[])
 
     return (
-        <div>
-            <p>{id}</p>
-            <p>{newsone.title}</p>
-            <p>{newsone.content}</p>
-            <p>{newsone.date}</p>
-            
+        <div className="newsForOne-section">
+            <div className="news-list">
+                <div className="news-list-top">
+                    <div className="news-list-date">{newsone.date}</div>
+                    <div className="news-list-title">{newsone.title}</div>
+                </div>
+                <div className="news-list-content">{newsone.content}</div>
+            </div>      
         </div>
     )
 }

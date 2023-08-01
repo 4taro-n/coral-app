@@ -4,15 +4,16 @@
     display: flex;
     /* flex-direction: column;
     justify-content: center; */
+    background-color: var(--base);
 
 }
 .top-background {
     background: url(./images/chair.JPG);
     background: url(./images/img-2.jpg);
     background-repeat:  no-repeat;                  
-    /* background-position: center center;  */
+    background-position: center center; 
     background-size: cover; 
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     width: 65vw;
     height: 100vh;  
     /* z-index: -99; */
@@ -43,12 +44,13 @@
 
 .top-contents-p > p {
     font-weight: 100;
+    color: var(--base-txt);
 }
 .top-page-link {
     margin-top: 4vh;
     margin-left: -50px;
 }
-.top-page-btn {
+/* .top-page-btn {
     position: relative;
 	overflow: hidden;
     text-decoration: none;
@@ -66,55 +68,83 @@
 }
 .top-page-btn span {
     position: relative;
-	z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+	z-index: 3;
     font-weight: 700;
 	color:var(--top-btn-back-hover);
 }
 .top-page-btn:hover span {
     color:var(--top-btn-color-hover);
 }
-/*== 背景が流れる（左から右） */
+
 .top-page-btn:before {
     content: '';
-   /*絶対配置で位置を指定*/
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
-   /*色や形状*/
-    background:#fff;/*背景色*/
+    background:#fff;
     width: 100%;
    height: 100%;
-   /*アニメーション*/
     transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
     transform: scale(0, 1);
    transform-origin: right top;
 }
-/*hoverした際の形状*/
 .top-page-btn:hover:before{
 	transform-origin:left top;
 	transform:scale(1, 1);
 }
 .top-page-btn i {
-    /* position: absolute; */
-    /* top:30%;
-    right: 13px; */
     font-size: 1rem;
     transform: translate(10%, 7%);
     transition: all .3s;
 }
 .top-page-btn:hover i {
-    /* right: 11px; */
     transform: translate(45%, 7%);
-}
-/* @keyframe movetoright {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(10);
-    }
 } */
+.top-page-btn {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1rem;
+    box-shadow: .3rem .3rem .6rem #c8d0e7, 
+                -.2rem -.2rem .5rem #FFF;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease;
+
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background: #6d5dfc;
+    background: #67BCE2;
+    box-shadow:inset .2rem .2rem 1rem #8abdff, 
+              inset -.2rem -.2rem 1rem #009AE0,
+              .3rem .3rem .6rem #c8d0e7, 
+              -.2rem -.2rem .5rem #FFFF;
+    color: #E4EBF5;
+}
+.top-page-btn span {
+    position: relative;
+	z-index: 3;
+    font-weight: 700;
+	color:var(--base-txt);
+}
+.top-page-btn i {
+    font-size: 1rem;
+    transform: translate(100%, 10%);
+    transition: all .3s;
+}
+.top-page-btn:hover span {
+    color: var(--white);
+}
+.top-page-btn:hover i {
+    transform: translate(145%, 10%);
+} 
+.top-page-btn:active {
+    box-shadow:inset .2rem .2rem 1rem #009AE0, 
+               inset -.2rem -.2rem 1rem #8abdff;
+}
 
 
 .top-side-scroll {

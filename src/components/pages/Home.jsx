@@ -18,7 +18,7 @@ function Home() {
         <div>
             <Navbar link_scroll={false}/>
             <TopPage />
-            <Covid />
+            {/* <Covid /> */}
             <Line />
             <MarginForHome />
             <NewsInHome />

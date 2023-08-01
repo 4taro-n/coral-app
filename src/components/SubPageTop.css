@@ -1,5 +1,7 @@
 .subpage-section {
     /* height: 90vh; */
+    background: var(--base);
+    color: var(--base-txt);
 }
 .subpage-section-first {
     margin: 0 6vw;
@@ -48,7 +50,7 @@
 }
 .subpage-link-home {
     text-decoration: none;
-    color:rgb(26, 23, 23);
+    color: var(--base-blue);
 }
 .subpage-link > i {
     transform: translate(0%, 20%);
