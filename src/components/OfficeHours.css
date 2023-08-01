@@ -1,7 +1,9 @@
 .office-hours-section {
-    margin: 0 6vw;
+    padding: 0 6vw;
     border-right: 1px solid rgb(235, 235, 235);
     border-left: 1px solid rgb(235, 235, 235);
+
+    background-color: var(--base);
 }
 .office-hours-heading {
     /* display: flex;
@@ -17,28 +19,11 @@
 .office-hours-heading > h1 {
     padding-top: 100px;
 }
-/* table {
-    margin-top: 10vh;
-    border-collapse: collapse;
-    display: flex;
-    justify-content: center;
-}
-tbody {
-    border-radius: 9px;
-}
-table th, table td {
-    padding: 1vh 2vw;
-    text-align: center;
-    border: 1px solid #000;
-}
-.bg-pink {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-    color: #fff;
-} */
 .office-hours-table {
     margin-top: 10vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 table {
     border: 1px solid var(--table-border);
@@ -48,6 +33,12 @@ table {
     overflow: hidden;
     text-align: center;
     width: 60%;
+
+    border-radius: 9px;  
+    background-color: #e0e5ec;
+    box-shadow: 7px 7px 12px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    transition: all 250ms ease-in-out;
+    border: 1px solid rgba(255,255,255,0.2);
 }
 table thead th,
 table tbody th,
@@ -72,8 +63,26 @@ table tbody tr:last-child td {
     border-bottom: none;
 }
 
-
-
+.dot {
+    height: 2vw;
+    width: 2vw;
+    margin: 1vw;
+    /* background: #EOE5EC; */
+    box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.6),
+        -5px -5px 10px rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+.triangle {
+    /* √3 */
+    border-bottom: 1.73vw solid #fff; 
+    border-left: 1vw solid transparent; 
+    border-right: 1vw solid transparent; 
+    margin: 1vw;
+    color: #fff;
+    /* box-shadow: 5px 5px 10px rgba(163, 177, 198, 0.6),
+        -5px -5px 10px rgba(255, 255, 255, 0.5); */
+    
+}
 .calendar-section {
     display: flex;
     align-items: center;
@@ -89,23 +98,26 @@ table tbody tr:last-child td {
 }
 /* スクロールバー */
 .fc-scroller::-webkit-scrollbar-track {
-    background: var(--cal-back);
+    /* background: var(--cal-back); */
+    background: var(--table-back);
     border-radius: 0; 
 }
 /* 日付配色 */
 .fc-col-header-cell {
-    background: var(--cal-back);
+    /* background: var(--cal-back); */
+    background: var(--table-back);
 }
 .fc-col-header {
     border-radius: 0;
 }
 .fc-day-sun {
-    background-color: #ffeaea;
+    /* background-color: #ffeaea; */
+    background: var(--table-back);
 }
 
 @media screen and (max-width: 960px) {
     .office-hours-section {
-        margin: 0 12vw;
+        padding: 0 12vw;
         border: none;
     }
     .calendar-position {
@@ -115,7 +127,7 @@ table tbody tr:last-child td {
 }
 @media screen and (max-width: 768px) {
     .office-hours-section {
-        margin: 0 5vw;
+        padding: 0 5vw;
     }
     table {
         width: 100%;

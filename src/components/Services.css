@@ -1,16 +1,20 @@
 .services-section {
-    margin: 0 6vw;
+    padding: 0 6vw;
     border-right: 1px solid rgb(235, 235, 235);
     border-left: 1px solid rgb(235, 235, 235);
     display: flex;
     flex-direction: column;
     align-items: center;  
+    background: var(--base);
+    color: var(--base-txt);
 }
 .services-card {
     width: 80%;
     display: flex;
     margin: 5vh 0;
     height: 15rem;
+
+    border-radius: 9px;
 }
 .services-card:nth-of-type(2),  .services-card:nth-of-type(4){
     flex-direction: row-reverse;
@@ -19,8 +23,14 @@
     width: 50%;
     display: flex;
 
-    border: 1px solid rgb(26, 23, 23);
-    /* border-radius: 9px; */
+    /* border: 1px solid rgb(26, 23, 23); */
+    border-radius: 9px;
+
+    background-color: #e0e5ec;
+    /* dark */
+    box-shadow: 7px 7px 12px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    transition: all 250ms ease-in-out;
+    border: 1px solid rgba(255,255,255,0.2);
 }
 .services-pic-left, .services-pic-right {
     width: 50%;
@@ -30,13 +40,15 @@
 }
 .services-pic-left {
     box-shadow: 0 0 8px rgba(0, 0, 0, .5);
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    background: var(--home-title);
+    border-radius: 9px 0 0 9px;
 }
 .services-pic-left p {
     color: #fff;
 }
 .services-pic-right i {
     font-size: 5rem;
+    color: var(--base-lightblue);
 }
 .services-text {
     width: 50%;
@@ -56,13 +68,13 @@
 }
 @media screen and (max-width: 960px) {
     .services-section {
-        margin: 0 12vw;
+        padding: 0 12vw;
         border: none;
     }
 }
 @media screen and (max-width: 768px) {
     .services-section {
-        margin: 0 5vw;
+        padding: 0 5vw;
     }
     .services-card {
         flex-direction: column;

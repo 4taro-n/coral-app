@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '../Navbar';
 import SubPageTop from '../SubPageTop';
 import NewsForOne from '../NewsForOne';
+import Footer from '../Footer';
 
 function NewsPageOne() {
     return (
@@ -14,6 +15,7 @@ function NewsPageOne() {
             background_class="background-recruit"
             page_name="新着情報" />
             <NewsForOne />
+            <Footer />
         </div>
     )
 }

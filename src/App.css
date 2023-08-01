@@ -3,9 +3,15 @@
     margin: 0;
     padding: 0;
     font-family: 'PT Sans', sans-serif;
+    
 }
 
 :root {
+    /* base */
+    --base: #e0e5ec;
+    --base-txt: #31344b;
+    --base-blue: #00A0E8;
+    --base-lightblue: #67BCE2;
     /* navbar */
     --nav-back: #fff;
     --nav-links-hover: #00A0E8;
@@ -63,6 +69,8 @@
     --services-home-link-third: #CF859B;
     --services-home-link-fourth: #addb6e;
 
+    --services-home: rgba(0, 160,232, 0.8);
+
     /* officehours */
     --table-border: rgb(235, 235, 235);
     --table-back: #00A0E8;
@@ -91,5 +99,8 @@
     --services-icon: #242222;
 
     /* recruit-page */
+
+    /* cerec-page */
+    --cerec-points-back: #00A0E8;
 
 }

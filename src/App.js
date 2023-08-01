@@ -14,6 +14,7 @@ import ServicesPage from './components/pages/ServicesPage';
 import Recruit from './components/pages/Recruit';
 import EditerPage from './components/pages/EditerPage';
 import NewsPageOne from './components/pages/NewsPageOne';
+import CerecPage from './components/pages/CerecPage';
 
 const App = () => {
     return (
@@ -28,6 +29,7 @@ const App = () => {
                     <Route exact path="/Recruit"  element={<Recruit/>} />
                     <Route exact path="/EditerPage"  element={<EditerPage/>} />
                     <Route path="NewsPage/:id" element={<NewsPageOne />} />
+                    <Route path="CerecPage" element={<CerecPage />} />
                 </Routes>
             </Router>
         </div>

@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import './ServicesInHome.css';
+import CerecInHome from './CerecInHome';
+
 
 function ServicesInHome() {
     return (
@@ -9,6 +11,7 @@ function ServicesInHome() {
             <div className="services-home-heading">
                 <h1>私たちにできること</h1>
             </div>
+            
             <div className="services-home-links">
                 <Link to="/ServicesPage" className="services-link">
                     <div className="services-link-i">
@@ -46,6 +49,7 @@ function ServicesInHome() {
                     </div>
                 </Link>
             </div>
+            <CerecInHome />
         </div>
     )
 }

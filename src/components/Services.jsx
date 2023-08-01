@@ -1,5 +1,5 @@
 import React from 'react';
-　
+
 import './Services.css';
 
 function Services() {
@@ -58,7 +58,7 @@ function Services() {
             <div className="services-card">
                 <div className="services-pic">
                     <div className="services-pic-left">
-                        <p>一般歯科</p>
+                        <p>インプラント</p>
                     </div>
                     <div className="services-pic-right">
                         <i class="fas fa-teeth"></i>

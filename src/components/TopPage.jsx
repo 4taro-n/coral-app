@@ -12,14 +12,13 @@ function TopPage() {
             <div className="top-contents">
                 <h1>MAKING THE <br/> TOWN SMILE</h1>
                 <div className="top-contents-p"><p>歯科コーラルクリニックは患者様に寄り添い、十分な説明・痛くない丁寧な診療を心がけています。</p></div>
-                {/* <p>患者様に寄り添い、十分な説明・痛くない丁寧な診療を心がけています。</p> */}
                 <Scroll to='access' className="top-page-link" smooth={true}>
-                    <button  className="top-page-btn">
+                    <div  className="top-page-btn">
                         <span>
                             アクセス
                             <i class="fas fa-angle-right"></i>
                         </span>
-                    </button>
+                    </div>
                 </Scroll>
             </div>
             <div className="top-side-scroll">

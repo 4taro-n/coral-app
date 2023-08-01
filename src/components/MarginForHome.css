@@ -1,18 +1,20 @@
 .margin-for-home {
     height: 100px;
     width: 100%;
-    margin: 0 6vw;
+    padding: 0 6vw;
     border-right: 1px solid rgb(235, 235, 235);
     border-left: 1px solid rgb(235, 235, 235);
+
+    background-color: var(--base);
 }
 @media screen and (max-width: 960px) {
     .margin-for-home {
-        margin: 0 12vw;
+        padding: 0 12vw;
         border: none;
     }
 }
 @media screen and (max-width: 768px) {
     .margin-for-home {
-        margin: 0 5vw;
+        padding: 0 5vw;
     }
 }

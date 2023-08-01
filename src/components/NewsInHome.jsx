@@ -39,13 +39,11 @@ function NewsInHome() {
                 <h1>新着情報</h1>
             </div>
             <div className="news-home-contents">
-                <Link to="/NewsPage" className="news-home-link">
-                    <button className="news-home-btn">
-                        <span>
-                            more
-                            <i class="fas fa-arrow-right"></i>
-                        </span>
-                    </button>
+                <Link to="/NewsPage" className="news-home-btn">
+                    <span>
+                        more
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
                 </Link>
                 <ul className="news-home-contents-ul">{newsList}</ul>
             </div>    
