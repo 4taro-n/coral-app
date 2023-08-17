@@ -16,9 +16,12 @@ function Footer() {
                 <div className="footer-link-wrapper">
                     <div className="footer-link-items">
                         <h2>Office Hours</h2>
-                        <p>月・火・水・金: <br/>9:00am ~ 12:00pm / 15:00pm ~ 19:00pm</p>
+                        {/* <p>月・火・水・金: <br/>9:00am ~ 12:00pm / 15:00pm ~ 19:00pm</p>
                         <p>木・土: <br/>9:00am ~ 12:00pm</p>
-                        <p>日・祝日: <br />休診</p>
+                        <p>日・祝日: <br />休診</p> */}
+                        <p>8:30am ~ 12:00pm / 15:00pm ~ 19:00pm</p>
+                        <p>休診：木・土午後、日・祝日</p>
+                        
                     </div>
                     <div className="footer-link-items">
                         <h2>Contact Us</h2>
@@ -49,7 +52,7 @@ function Footer() {
                             <Coral_logo_svg ClassName="coral-logo-footer"/>
                         </Link>
                     </div>
-                    <small className="website-rights">RYUTARO © 2021</small>
+                    <small className="website-rights">CORALDENTAL © 2021</small>
                 </div>
             </section>      
         </div>
