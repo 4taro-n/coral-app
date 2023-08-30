@@ -1,14 +1,17 @@
 .FormSignUp {
-    margin: 80px 10rem;
-    margin: 0 6vw;
+    
+    padding: 5rem 6vw;
     border-right: 1px solid rgb(235, 235, 235);
     border-left: 1px solid rgb(235, 235, 235);
+    background-color: var(--base);
 }
 .recruit-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    /* margin: 0 10rem; */
 }
 .recruit-form > h3 {
     font-size: 3rem;
@@ -22,7 +25,7 @@
 
 .form-inputs {
     /* margin: 2rem auto; */
-    border-top: 1px solid #e3e9e9;
+    border-top: 1px solid #ffff;
     /* padding: 20px 10px; */
     padding: 20px 50px;
     display: flex;
@@ -67,7 +70,7 @@
 }
 /* textarea */
 .form-textarea-wrap {
-    border-top: 1px solid #e3e9e9;
+    border-top: 1px solid #ffff;
     padding: 20px 10px;
     display: flex;
     height: 10rem;
@@ -114,7 +117,7 @@ textarea {
 .submit-button {
     display: flex;
     justify-content: center;
-    margin: 3rem 0;
+    /* margin: 3rem 0; */
 }
 .submit-button > input {
     width: 8rem;
@@ -179,7 +182,7 @@ textarea {
 }
 @media screen and (max-width: 768px) {
     .FormSignUp {
-        margin: 80px 0;
+        padding: 80px 0;
     }
     .form-inputs, .form-textarea-wrap {
         flex-direction: column;
