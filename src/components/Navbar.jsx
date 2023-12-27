@@ -25,12 +25,18 @@ const Navbar = ({link_scroll}) => {
     return (
         <div>
             <nav className={navbar ? 'navbar active' : 'navbar'}>
-                
                 <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                     <Coral_logo_svg ClassName="coral_logo"/>
                 </Link>
-
+                {/* <div className="navbar-left">
+                    
+                    <div className="navbar-left-tel"><i className="fas fa-phone-alt" />058-329-3456</div>
+                </div> */}
                 <div className="nav-margin"></div>
+
+                <a href='tel: +81-58-329-3456' className="tel-btn">
+                    <i className="fas fa-phone-alt" />
+                </a>
 
                 {/* メニューバーアイコンの切り替え */}
                 <div className="menu-icon" onClick={handleClick}>
