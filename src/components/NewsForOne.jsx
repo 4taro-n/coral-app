@@ -9,11 +9,12 @@ const NewsForOne = () => {
     // パラメーターを取得
     const {id} = useParams();
     const [newsone, setNewsone] = useState([]);
-
+    
     // 取得したデータをstateで管理できるように格納
     const fetchone = async(id) => {
         const data = await Api.getOneNews(id);
         await setNewsone(data);
+        console.log("newsData: ", data);
     }
 
     // 起動時に発動

@@ -46,6 +46,7 @@
 }
 .news-list-content {
     margin-top: 10%;
+    white-space: pre-wrap;
 }
 .news-list-group {
     display: flex;
