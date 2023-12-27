@@ -12,11 +12,6 @@
     z-index: 99;
     /* background-color: var(--base); */
 }
-.navbar-left {
-    display: flex;
-    align-items: center;
-    /* width: 500px; */
-}
 .navbar-logo {
     display: flex;
     align-items: center;
@@ -25,9 +20,6 @@
     width: 360px;
     fill: var(--nav-logo);
 }
-/* .navbar-left-tel {
-    font-size: 1rem;
-} */
 .nav-margin {
     flex: 1;
 }
@@ -58,7 +50,7 @@
 .fa-bars {
     color: var(--nav-icon);
 }
-.menu-icon, .tel-btn {
+.menu-icon {
     display: none;
 }
 /* スクロールに応じて変化せる */
@@ -102,9 +94,6 @@
         right: 0;
         background: #fff;
         height: 80px;
-    }
-    .navbar-left-tel {
-        display: none;
     }
     .navbar.active {
         height: 80px;
@@ -157,25 +146,6 @@
         font-size: 1.8rem;
         cursor: pointer;
     }
-    .tel-btn {
-        /* display: block;
-        position: absolute; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position:absolute;
-        right: 5rem;
-        height: 100%;
-        width: 5rem;     
-        background-color: var(--base-blue);   
-    }
-    .tel-btn > i {
-        font-size: 2rem;
-        text-align: center;
-        /* color: var(--base); */
-        color: #ffff;
-        
-    }
     .fa-times {
         color: var(--nav-icon);
         font-size: 2rem;
@@ -187,14 +157,6 @@
     @media screen and (max-width: 768px) {
         .coral_logo {
             width: 200px;
-            height: auto;
-            /* transform: translate(15%, 100%); */
-            transform: translate(10%);
-        }
-    }
-    @media screen and (max-width: 390px) {
-        .coral_logo {
-            width: 180px;
             height: auto;
             /* transform: translate(15%, 100%); */
             transform: translate(10%);
