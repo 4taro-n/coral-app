@@ -21,6 +21,14 @@ function RecruitLink() {
                     </span>
                 </div>
             </a>
+            <a href="https://jp.indeed.com/cmp/歯科コーラルクリニック(医療法人-Epic)?from=mobviewjob&tk=1hgmni6ntjqlq800&fromjk=d9de847590eda211&attributionid=mobvjcmp" target="_blank" rel="noopener noreferrer" className="access-googlemap-link">
+                <div className="recruit-middle-btn">
+                    <span>
+                        歯科助手
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                </div>
+            </a>
         </div>
     )
 }
