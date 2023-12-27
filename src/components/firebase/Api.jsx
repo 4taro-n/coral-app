@@ -90,6 +90,15 @@ export const deleteNews = async(id) => {
     await deleteDoc(doc(db, "coral-news", id));
 }
 
+export const updateNews = async(id, title, content, date) => {
+    await updateDoc(doc(db, "coral-news", id), {
+            title: title,
+            content: content,
+            date: date,
+        })
+    
+}
+
 // カレンダー用
 export const deletePlans = async(id) => {
     await deleteDoc(doc(db, 'coral-calendar', id));
