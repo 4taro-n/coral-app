@@ -57,7 +57,8 @@
 }
 .form-input-item > p {
     margin-right: 2rem;
-    background-color: #242222;
+    /* background-color: #242222; */
+    background-color: red;
     color: #fff;
     padding: 0 1rem;
 }
@@ -96,7 +97,8 @@
 }
 .form-textarea-item > p {
     margin-right: 2rem;
-    background-color: red;
+    /* background-color: red; */
+    background-color: #242222;
     color: #fff;
     padding: 0 1rem;
 }

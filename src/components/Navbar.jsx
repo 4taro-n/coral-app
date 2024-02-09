@@ -63,7 +63,7 @@ const Navbar = ({link_scroll}) => {
                             新着情報
                         </Scroll>}
                     </li>
-                    <li>
+                    {/* <li>
                         {link_scroll ?
                         <Link to="/ServicesPage" className="nav-links" onClick={closeMobileMenu}>
                             診療案内
@@ -71,7 +71,7 @@ const Navbar = ({link_scroll}) => {
                         <Scroll to="services" className="nav-links" onClick={closeMobileMenu} smooth={true}>
                             診療案内
                         </Scroll>}
-                    </li>
+                    </li> */}
                     <li>
                         {link_scroll ? 
                         <Link to="/" className="nav-links" onClick={closeMobileMenu}>
@@ -87,6 +87,11 @@ const Navbar = ({link_scroll}) => {
                         </Scroll>
                     </li> */}
                     <li>
+                        <Link to="/doctor-intro" className="nav-links" onClick={closeMobileMenu}>
+                            ごあいさつ
+                        </Link> 
+                    </li>
+                    <li>
                         {link_scroll ? 
                         <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                             アクセス
@@ -96,7 +101,7 @@ const Navbar = ({link_scroll}) => {
                         </Scroll>}
                     </li>
                     <li>
-                        <Link to="/Recruit" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/recruit" className="nav-links" onClick={closeMobileMenu}>
                         {/* <Link to="/" className="nav-links" onClick={closeMobileMenu}> */}
                             求人情報
                         </Link>

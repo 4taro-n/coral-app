@@ -38,6 +38,7 @@ function Footer() {
                         <Link to="/ServicesPage" className="footer-links-content">診療案内</Link>
                         <Link to="/Recruit" className="footer-links-content">求人情報</Link>
                         {/* <Link to="/EditerPage" className="footer-links-content">管理者ページ</Link> */}
+                        <Link to="/doctor-intro" className="footer-links-content">院長紹介</Link> 
                         <Link to="/EditerPage" className="footer-links-content">/</Link>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import firbase from './components/firebase/Firebase';
+import firebase from './components/firebase/Firebase';
 
 import './App.css';
 
@@ -15,6 +15,7 @@ import Recruit from './components/pages/Recruit';
 import EditerPage from './components/pages/EditerPage';
 import NewsPageOne from './components/pages/NewsPageOne';
 import CerecPage from './components/pages/CerecPage';
+import DoctorIntroPage from './components/pages/DoctorIntroPage'
 
 const App = () => {
     return (
@@ -26,10 +27,11 @@ const App = () => {
                     <Route exact path="/" element={<Home/>} />
                     <Route exact path="/NewsPage"  element={<NewsPage/>} />
                     <Route exact path="/ServicesPage" element={<ServicesPage/>} />
-                    <Route exact path="/Recruit"  element={<Recruit/>} />
+                    <Route exact path="/recruit"  element={<Recruit/>} />
                     <Route exact path="/EditerPage"  element={<EditerPage/>} />
                     <Route path="NewsPage/:id" element={<NewsPageOne />} />
                     <Route path="CerecPage" element={<CerecPage />} />
+                    <Route path="doctor-intro" element={<DoctorIntroPage />} />
                 </Routes>
             </Router>
         </div>

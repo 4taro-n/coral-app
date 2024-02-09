@@ -1,0 +1,176 @@
+.doctor-intro-section {
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    padding: 10vh 6vw;
+    background: var(--base);
+    color: var(--base-txt);
+    font-size: 1.1rem;
+}
+.doctor-intro-left-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 7%;
+}
+.doctor-intro-img-box {
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 
+    inset 2px 2px 5px #b8b9be,inset -3px -3px 7px #fff;
+    background: #dcdde3;
+    text-decoration: none;
+    color: #31344b;
+    padding: 1.2rem;
+    width: 50%;
+    z-index: 10;
+    margin-bottom: -10vh;
+    /* margin-left: 5%; */
+}
+.doctor-intro-img {
+    /* width: 45%; */
+    border-radius: 10px;
+}
+.doctor-intro-img > img {
+    width: 100%;
+    border-radius: 10px;
+}
+.doctor-intro-container {
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.5),
+       inset 3px 3px 7px rgba(136, 165, 191, 0.48), 
+      inset -3px -3px 7px #FFFFFF;
+    background: linear-gradient(318.32deg, rgba(163, 177, 198, 0.1) 0%, rgba(163, 177, 198, 0.1) 55%, rgba(163, 177, 198, 0.25) 100%);
+    text-decoration: none;
+    color: #31344b;
+    padding: 2rem;
+    /* 要調整 */
+    /* margin-top: -10vh; */
+    /* margin-left: 25%; */
+    /* width: 50%; */
+    /* height: 70vh; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.doctor-intro-contents {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+/* .doctor-intro-contents > h1:first-of-type {
+    font-size: 1.6rem;
+}
+.doctor-intro-contents > h1:nth-of-type(2) {
+    font-size: 1.4rem;
+} */
+.doctor-intro-contents > p {
+    width: 100%;
+    overflow-wrap: break-word;
+    margin-bottom: 20px;
+}
+.director-signature {
+    text-align: right;
+}
+.doctor-intro-bar {
+    width: 130%;
+    height: 4px;
+    background-color: var(--nav-links-hover);
+    /* dark */
+    box-shadow: 7px 7px 12px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    transition: all 250ms ease-in-out;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+.doctor-intro-profile-container {
+    border-radius: 9px;  
+    /* background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff; */
+
+    background-color: #e0e5ec;
+    /* dark */
+    box-shadow: 7px 7px 12px rgba(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+    transition: all 250ms ease-in-out;
+    border: 1px solid rgba(255,255,255,0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* width: 15vw;
+    height: 20vw; */
+    width: 50%;
+    /* height: 60vh; */
+
+    padding: 2rem;
+    margin-top: 7rem;
+
+    /* color: var(--services-home); */
+    position: relative;
+}
+.doctor-intro-title {
+    position: absolute;
+    top: 0;
+    /* left:0; */
+    color: var(--base-blue);
+    z-index: 10;
+    font-size: 2rem;
+    margin-top: -1.4rem;
+    
+}
+.doctor-intro-table {
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+      -9px -9px 16px rgba(255, 255, 255, 0.5),
+       inset 3px 3px 7px rgba(136, 165, 191, 0.48), 
+      inset -3px -3px 7px #FFFFFF;
+    background: linear-gradient(318.32deg, rgba(163, 177, 198, 0.1) 0%, rgba(163, 177, 198, 0.1) 55%, rgba(163, 177, 198, 0.25) 100%);
+    text-decoration: none;
+    color: #31344b;
+    padding: 1.2rem;
+}
+.doctor-intro-first-cell, .doctor-intro-second-cell, .doctor-intro-third-cell {
+    display: flex;
+    
+}
+.doctor-intro-col {
+    width: 20%;
+    border-bottom: 4px solid var(--nav-links-hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+
+}
+.doctor-intro-info {
+    width: 80%;
+    padding: 1rem;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 960px) {
+    .doctor-intro-section {
+        flex-direction: column;
+    }
+    .doctor-intro-left-container {
+        width: 100%;
+    }
+    .doctor-intro-profile-container {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 450px) {
+    
+}
