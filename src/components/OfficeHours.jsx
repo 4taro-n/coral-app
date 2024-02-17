@@ -47,7 +47,7 @@ function OfficeHours() {
                 </tbody>
             </table> */}
             <div className="office-hours-table">
-                <table>
+                <table className="office-timetable">
                     <thead>
                         <tr>
                         <th>診療時間</th>
