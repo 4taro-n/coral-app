@@ -198,11 +198,14 @@
         width: 80%;
         margin-bottom: 2rem;
     }
+    .footer-address-box > p {
+        font-size: 0.9rem;
+    }
     .footer-modal-timetable-container {
         width: 80%;
     }
     .footer-address-box {
-        margin: 0 0;
+        margin: 1rem 0;
     }
     .footer-table {
         width: 100%;
