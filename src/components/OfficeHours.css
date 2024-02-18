@@ -138,6 +138,9 @@
     }
 }
 @media screen and (max-width: 415px) {
+    .office-timetable {
+        width: 100%;
+    }
     table {
         font-size: 14px;
     }
