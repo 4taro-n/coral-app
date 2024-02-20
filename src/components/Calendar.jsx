@@ -16,7 +16,6 @@ function Calendar() {
         console.log(arg.dateStr);
     },[]);
 
-
     // firestoreからデータ取得
     const [plan, setPlan] = useState([]);
 
