@@ -25,7 +25,7 @@
     flex-direction: column;
     align-items: center;
 }
-.office-timetable {
+table {
     border: 1px solid var(--table-border);
     border-collapse: separate;
     border-spacing: 0;
@@ -40,26 +40,26 @@
     transition: all 250ms ease-in-out;
     border: 1px solid rgba(255,255,255,0.2);
 }
-.office-timetable thead th,
-.office-timetable tbody th,
-.office-timetable tbody td {
+table thead th,
+table tbody th,
+table tbody td {
     padding: 1vh 2vw;
     border-bottom: 1px solid var(--table-border);
 }
-.office-timetable thead th {
+table thead th {
     background: var(--table-back);
     color: var(--table-color);
 }
-.office-timetable tbody th {
+table tbody th {
     background: var(--table-back);
     color: var(--table-color);
 }
-.office-timetable thead th + th,
-.office-timetable tbody td {
+table thead th + th,
+table tbody td {
     border-left: 1px solid var(--table-border);
 }
-.office-timetable tbody tr:last-child th,
-.office-timetable tbody tr:last-child td {
+table tbody tr:last-child th,
+table tbody tr:last-child td {
     border-bottom: none;
 }
 
