@@ -1,0 +1,99 @@
+.facility-section {
+    padding: 0 6vw;
+    border-right: 1px solid rgb(235, 235, 235);
+    border-left: 1px solid rgb(235, 235, 235);
+    background: var(--base);
+    color: var(--base-txt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+.facility-container {
+    margin-top: 4vh;
+    border: 5px solid var(--facility-border);
+    border-radius: 4px;
+    width: 70vw;
+    box-shadow: 9px 9px 16px rgba(189, 189, 189, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.facility-container > h2 {
+    color: var(--facility-title);
+    padding-bottom: 1rem;
+}
+.facility-btn {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1rem;
+    box-shadow: .3rem .3rem .6rem #c8d0e7, 
+                -.2rem -.2rem .5rem #FFF;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease;
+
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    color: #9baacf;
+    text-decoration: none;
+}
+.facility-btn span {
+    position: relative;
+	z-index: 3;
+    font-weight: 700;
+	color:var(--news-btn-color);
+}
+.facility-btn i {
+
+    font-size: 1rem;
+    transform: translate(100%, 10%);
+    transition: all .3s;
+}
+.facility-btn:hover span {
+    color:var(--facility-btn-back-hover);
+}
+.facility-btn:hover i {
+    transform: translate(100%, 15%);
+} 
+.facility-btn:active {
+    box-shadow: inset .2rem .2rem .5rem #c8d0e7, 
+    inset -.2rem -.2rem .5rem #FFFF;
+}
+.facility-contents {
+    display: none;
+    padding: 2rem;
+    flex-direction: column;
+}
+.facility-contents-listbox {
+    padding-left: 4rem;
+    margin: 1em 0;
+    list-style: square;
+}
+.facility-container.active > .facility-contents {
+    display: flex;
+    transition: all 1s ease;
+}
+@media screen and (max-width: 960px) {
+    .facility-section {
+        margin: 0 12vw;
+        border: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .facility-section {
+        margin: 0 5vw;
+    }
+    .facility-container {
+        width: 95vw;
+    }
+    .facility-container > h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+}
