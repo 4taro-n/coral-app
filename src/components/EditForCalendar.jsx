@@ -35,6 +35,7 @@ function EditForCalendar() {
     const fetch = async() => {
         const data = await Api.getPlans();
         await setPlans(data);
+        
     }
 
     useEffect (()=> {

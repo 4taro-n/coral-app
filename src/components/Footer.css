@@ -93,4 +93,26 @@
 }
 
 @media screen and (max-width: 768px) {
+    .footer-modal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -25%;
+    }
+    .footer-modal-contents-container {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .footer-address-box > p {
+        font-size: 0.9rem;
+    }
+    .footer-modal-timetable-container {
+        width: 80%;
+    }
+    .footer-address-box {
+        margin: 1rem 0;
+    }
+    .footer-table {
+        width: 100%;
+    }
 }

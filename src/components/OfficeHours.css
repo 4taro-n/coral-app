@@ -141,6 +141,9 @@ table tbody tr:last-child td {
     table {
         font-size: 14px;
     }
+    .office-timetable {
+        width: 100%;
+    }
     .calendar-position {
         width: 100%;
         height: 120%;

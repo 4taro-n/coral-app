@@ -16,13 +16,13 @@ function Calendar() {
         console.log(arg.dateStr);
     },[]);
 
-
     // firestoreからデータ取得
     const [plan, setPlan] = useState([]);
 
     // 取得したデータをstateで管理できるように格納
     const fetch = async() => {
         const data = await Api.getPlans();
+        await console.log("This is calendar data:", data);
         await setPlan(data);
     }
 

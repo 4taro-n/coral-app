@@ -201,7 +201,7 @@ const FormSignup = ({submitForm}) => {
                     </div>
                     <div className="form-input">
                         <div className="form-input-item form-input-last">
-                            <p>任意</p>
+                            <p>必須</p>
                             <label>
                                 <input 
                                 type="radio"

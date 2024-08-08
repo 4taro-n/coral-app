@@ -48,12 +48,7 @@ function Footer() {
             </div> */}
             <section className="social-media">
                 <div className="social-media-wrap">
-                    <div className="footer-logo">
-                        <Link to="/" className="social-logo">
-                            <Coral_logo_svg ClassName="coral-logo-footer"/>
-                        </Link>
-                    </div>
-                    <small className="website-rights">RYUTARO © 2021</small>
+                    <Link to="/EditerPage" className="website-rights"><small>RYUTARO © 2021</small></Link>
                 </div>
             </section>      
         </div>

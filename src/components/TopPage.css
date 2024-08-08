@@ -1,11 +1,7 @@
 .top-page {
     height: 100vh;
-    /* background: url(./images/img-2.jpg); */
     display: flex;
-    /* flex-direction: column;
-    justify-content: center; */
     background-color: var(--base);
-
 }
 .top-background {
     background: url(./images/chair.JPG);

@@ -1,6 +1,5 @@
 .FormSignUp {
-    
-    padding: 5rem 6vw;
+    padding: 15vh 6vw;
     border-right: 1px solid rgb(235, 235, 235);
     border-left: 1px solid rgb(235, 235, 235);
     background-color: var(--base);
@@ -56,11 +55,12 @@
     align-items: center;
 }
 .form-input-item > p {
+    font-size: 0.8rem;
     margin-right: 2rem;
     /* background-color: #242222; */
     background-color: red;
     color: #fff;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 .form-input-item > input {
     width: 70%;
@@ -96,11 +96,12 @@
     align-items: flex-start;
 }
 .form-textarea-item > p {
+    font-size: 0.8rem;
     margin-right: 2rem;
     /* background-color: red; */
     background-color: #242222;
     color: #fff;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 textarea {
     width: 70%;
@@ -122,21 +123,35 @@ textarea {
     /* margin: 3rem 0; */
 }
 .submit-button > input {
-    width: 8rem;
-    height: 4.5rem;
-    font-size: 1.5rem;
-    border-radius: 2px;
-    color: #fff;
-    background-color: #242222;
-    border: 1px solid #242222;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1rem;
+    box-shadow: .3rem .3rem .6rem #c8d0e7, 
+                -.2rem -.2rem .5rem #FFF;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s ease;
 
-    -webkit-appearance: none;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background: #6d5dfc;
+    background: #67BCE2;
+    box-shadow:inset .2rem .2rem 1rem #8abdff, 
+              inset -.2rem -.2rem 1rem #009AE0,
+              .3rem .3rem .6rem #c8d0e7, 
+              -.2rem -.2rem .5rem #FFFF;
+    /* color: #E4EBF5; */
+    color: black;
 }
 .submit-button > input:hover {
-    transition: all 0.3s ease-out;
-    background: #fff;
-    color: #242424;
-    transition: 250ms;
+    color: var(--white);
+}
+.submit-button > input:active {
+    box-shadow:inset .2rem .2rem 1rem #009AE0, 
+               inset -.2rem -.2rem 1rem #8abdff;
 }
 
 /* success page */
