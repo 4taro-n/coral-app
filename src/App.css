@@ -34,14 +34,14 @@
     --top-btn-back-hover:#fff;
     --top-btn-color-hover:#242222;
 
-    /* covid */
-    --covid-border: #EFCDD7;
-    --covid-title: #800000;
-    --covid-btn-border:#800000;
-    --covid-btn-back:#fff;
-    --covid-btn-color: #242222;
-    --covid-btn-back-hover:#E04F86;
-    --covid-btn-color-hover: #fff;
+    /* facility */
+    --facility-border: #EFCDD7;
+    --facility-title: #800000;
+    --facility-btn-border:#800000;
+    --facility-btn-back:#fff;
+    --facility-btn-color: #242222;
+    --facility-btn-back-hover:#E04F86;
+    --facility-btn-color-hover: #fff;
 
     /* line */
     --line-border: #00C129;
